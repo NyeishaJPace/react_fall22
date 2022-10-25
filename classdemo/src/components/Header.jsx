@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Header extends React.Component{
+class Header extends Component{
     //constructor for state
     constructor(props){
         super(props)
@@ -34,6 +34,7 @@ class Header extends React.Component{
                 <button onClick={() => this.setState({ count : this.state.count +1})}>
                     Increment Count
                 </button>
+                <MainBody />
             </header>
         )
     }
