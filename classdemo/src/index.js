@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Button from 'react-bootstrap/Button';
 //import './sass/App.scss';
 import App from './App';
 
@@ -7,14 +8,14 @@ const LightTheme = React.lazy(() => import('./components/LightTheme'));
 const DarkTheme = React.lazy(() => import('./components/DarkTheme'));
 
 const ThemeSelector = ({children}) => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light" );
-
+  const theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light" ;
   localStorage.setItem('theme', theme)  //save user preference 
   return(
-    <React.Suspense fallback={<></>} >
+    <React.Suspense fallback={<>...Loading</>} key={theme}>
       {theme === 'dark' && <DarkTheme />}
       {theme === 'light' && <LightTheme />}
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}> Change Mode </button>
+      <Button variant="danger">Danger</Button>
+      <button onClick={() => {localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); window.location.reload()}}> Change Mode </button>
       {children}
     </React.Suspense>
 
