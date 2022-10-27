@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MainBody from "./MainBody";
 
 class Header extends Component{
     //constructor for state
