@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Button from 'react-bootstrap/Button';
-//import './sass/App.scss';
+import Spinner from 'react-bootstrap/Spinner';
 import App from './App';
 
 const LightTheme = React.lazy(() => import('./components/LightTheme'));
@@ -11,11 +10,13 @@ const ThemeSelector = ({children}) => {
   const theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light" ;
   localStorage.setItem('theme', theme)  //save user preference 
   return(
-    <React.Suspense fallback={<>...Loading</>} key={theme}>
+    <React.Suspense 
+      fallback={<Spinner animation="border" variant="primary" />} 
+      key={theme}
+      >
       {theme === 'dark' && <DarkTheme />}
       {theme === 'light' && <LightTheme />}
-      <Button variant="danger">Danger</Button>
-      <button onClick={() => {localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); window.location.reload()}}> Change Mode </button>
+     
       {children}
     </React.Suspense>
 
