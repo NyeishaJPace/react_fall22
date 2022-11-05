@@ -1,8 +1,10 @@
 import Header from "./components/Header";
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon} from '@fortawesome/free-solid-svg-icons'
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <Nav className="justify-content-center" activeKey="/home">
