@@ -16,12 +16,12 @@ function App() {
           <Nav.Link eventKey="link-2">Link</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Button variant="danger" onClick={() => {
+           <Button variant="fa-sharp fa-solid fa-moon" onClick={() => { 
             localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); 
             window.location.reload()
             }}> 
             Change Mode 
-            </Button>
+            </Button> 
         </Nav.Item>
       </Nav>
      <Header 
