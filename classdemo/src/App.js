@@ -18,7 +18,6 @@ function App() {
         <Nav.Item>
           <Nav.Link href="https://www.linkedin.com/in/nyeisha-pace-b8b527241/" target="_blank">LinkedIn</Nav.Link>
         </Nav.Item>
-        
         <Nav.Item>
            <Button onClick={() => {localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); 
             window.location.reload()
@@ -28,8 +27,8 @@ function App() {
         </Nav.Item>
       </Nav>
      <Header 
-        linkText="Learn React"
-        linkUrl="https://reactjs.org"
+        
+        
      />
      
     </div>

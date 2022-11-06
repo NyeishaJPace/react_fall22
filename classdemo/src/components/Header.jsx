@@ -24,7 +24,7 @@ class Header extends Component{
         return(
             <header className={`App-header ${this.state.theme}`}>
                 <p className={"testing-this" + this.state.theme}>
-                    Edit <code>src/App.js</code> and save to reload.
+                    About I'm a IT student intern currently working with the Bureau of Engraving and Printing. I have 3 years of experience in IT.
                 </p>
                 <a className="App-link" href={linkUrl} target="_blank" rel="noopener noreferrer" >
                     {linkText}
