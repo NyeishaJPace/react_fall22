@@ -38,9 +38,11 @@ class Header extends Component{
                 <a className="App-link" href={linkUrl} target="_blank" rel="noopener noreferrer" >
                     {linkText}
                 </a>
-                <span>
-                    You have clicked on the button {this.state.count} times!
-                </span>
+                <h2>Work</h2>
+                <p> 
+                 Information Technology Student Intern
+                
+                </p>
                 <button onClick={() => this.setState({ count : this.state.count +1})}>
                     Increment Count
                 </button>
