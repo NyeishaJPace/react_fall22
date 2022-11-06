@@ -10,23 +10,23 @@ function App() {
     <div className="App">
       <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
-          <Nav.Link href="/home">Active</Nav.Link>
+          <Nav.Link href="/home">Github</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Link</Nav.Link>
+          <Nav.Link eventKey="link-1">Twitter</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2">Link</Nav.Link>
+          <Nav.Link eventKey="link-2">LinkedIn</Nav.Link>
         </Nav.Item>
         
         <Nav.Item>
-           <Button color='red'
+           <Button
            
             onClick={() => { 
             localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); 
             window.location.reload()
             }}> 
-            <FontAwesomeIcon icon="fa-solid fa-moon" />
+            <FontAwesomeIcon icon= "fa-solid fa-moon" />
             </Button> 
         </Nav.Item>
       </Nav>
