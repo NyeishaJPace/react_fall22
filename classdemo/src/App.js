@@ -1,8 +1,9 @@
 import Header from "./components/Header";
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon} from '@fortawesome/free-solid-svg-icons';
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 function App() { 
   return (
@@ -17,12 +18,15 @@ function App() {
         <Nav.Item>
           <Nav.Link eventKey="link-2">Link</Nav.Link>
         </Nav.Item>
+        
         <Nav.Item>
-           <Button variant="fa-sharp fa-solid fa-moon" onClick={() => { 
+           <Button color='red'
+           
+            onClick={() => { 
             localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); 
             window.location.reload()
             }}> 
-            Change Mode 
+            <FontAwesomeIcon icon="fa-solid fa-moon" />
             </Button> 
         </Nav.Item>
       </Nav>
@@ -36,7 +40,7 @@ function App() {
 }
 
 export default App;
-
+library.add(faMoon);
 
 // props -> passed down from parent to child. A child shouldn't change the props f(x, y, z)
 
