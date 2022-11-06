@@ -8,22 +8,19 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 function App() { 
   return (
     <div className="App">
-      <Nav className="justify-content-center" activeKey="/home">
+      <Nav className="justify-content-center" activeKey="/https://github.com/NyeishaJPace">
         <Nav.Item>
-          <Nav.Link href="/home">Github</Nav.Link>
+          <Nav.Link href="https://github.com/NyeishaJPace" target="_blank">Github</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Twitter</Nav.Link>
+          <Nav.Link href="https://twitter.com/_TheRealJaypeee" target="_blank">Twitter</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2">LinkedIn</Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/nyeisha-pace-b8b527241/" target="_blank">LinkedIn</Nav.Link>
         </Nav.Item>
         
         <Nav.Item>
-           <Button
-           
-            onClick={() => { 
-            localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); 
+           <Button onClick={() => {localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); 
             window.location.reload()
             }}> 
             <FontAwesomeIcon icon= "fa-solid fa-moon" />
