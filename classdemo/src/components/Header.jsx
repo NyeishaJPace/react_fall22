@@ -23,9 +23,6 @@ class Header extends Component{
         // this.props.linkText
         return(
             <header className={`App-header ${this.state.theme}`}>
-                <p className={"testing-this" + this.state.theme}>
-                    About I'm a IT student intern currently working with the Bureau of Engraving and Printing. 
-                    I have 3 years of experience in IT.
                 <h1>About</h1>
                 <p> 
                  I'm a IT student intern currently working with the Bureau of Engraving and Printing.
