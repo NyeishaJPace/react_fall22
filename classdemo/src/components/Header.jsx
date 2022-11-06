@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MainBody from "./MainBody";
+import Design1 from '/images/Design1.png';
 
 class Header extends Component{
     //constructor for state
@@ -37,9 +38,16 @@ class Header extends Component{
                  Information Technology Student Intern
                 
                 </p>
-                <button onClick={() => this.setState({ count : this.state.count +1})}>
+                
+                <h3>Design</h3>
+                <img src="Design1.png" alt="Design"/>
+                
+
+                
+
+                {/*<button onClick={() => this.setState({ count : this.state.count +1})}>
                     Increment Count
-                </button>
+        </button>*/}
                 <MainBody />
             </header>
         )
