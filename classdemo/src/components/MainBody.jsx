@@ -1,6 +1,5 @@
-// create a functional component with hooks
+
 import React, { useState } from 'react';
-//import Design from '/images/Design1.png';
 
 function MainBody(){
     const [name, setName] = useState('')

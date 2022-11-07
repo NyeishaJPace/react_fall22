@@ -37,11 +37,3 @@ function App() {
 
 export default App;
 library.add(faMoon);
-
-// props -> passed down from parent to child. A child shouldn't change the props f(x, y, z)
-
-// state -> is owned by component, f has its own state, this.state.g
-
-// setState() function -> component lifecycle methods
-
-// hooks -> useeffects
