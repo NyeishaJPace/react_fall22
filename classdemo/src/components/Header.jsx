@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MainBody from "./MainBody";
-import Design1 from '/images/Design1.png';
+//import Design1 from '/images/Design1.png';
 
 class Header extends Component{
     //constructor for state
@@ -24,7 +24,8 @@ class Header extends Component{
         // this.props.linkText
         return(
             <header className={`App-header ${this.state.theme}`}>
-                <h1>About</h1>
+                <h1 style={{fontSize: '40px',}}>Nyeisha Pace  <br></br> IT Student Intern  <br></br> Hurtsboro,AL</h1>
+                <h2>About</h2>
                 <p> 
                  I'm a IT student intern currently working with the Bureau of Engraving and Printing.
                  <br></br>I am currently completing coursework at CSU and i have 3 years of experience in IT.
@@ -33,14 +34,14 @@ class Header extends Component{
                 <a className="App-link" href={linkUrl} target="_blank" rel="noopener noreferrer" >
                     {linkText}
                 </a>
-                <h2>Work</h2>
+                <h3>Work</h3>
                 <p> 
                  Information Technology Student Intern
                 
                 </p>
                 
-                <h3>Design</h3>
-                <img src="Design1.png" alt="Design"/>
+                <h4>Design</h4>
+                {/*<img src="Design1.png" alt="Design"/>*/}
                 
 
                 
