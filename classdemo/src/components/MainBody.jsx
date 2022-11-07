@@ -28,17 +28,11 @@ function MainBody(){
                 </p>
                 
                 <h4>Design</h4>
-                {/*<img src="Design1.png" alt="Design"/>*/}
-                
+                <img src={require('../images/Design1.png')} width={550} height={450} alt="design" />
+                <img src={require('../images/Design2.png')} width={550} height={450} alt="design" />
 
-                
-
-                {/*<button onClick={() => this.setState({ count : this.state.count +1})}>
-                    Increment Count
-        </button>*/}
         
-            <h3> Your name is: <i>{name}</i></h3>
-            <input type="text" value={name} onChange={handleChange} />
+            
         </div>
     )
 }
